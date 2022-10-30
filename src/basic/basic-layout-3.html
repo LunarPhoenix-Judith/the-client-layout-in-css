@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body {
+        max-width: 30em;
+        display: grid;
+        margin: 1 auto;
+        grid-template: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "knie knie"
+          "knie knie"
+          "knie knie"
+          "knie knie"
+          "knie knie"
+          "knie knie"
+          "teen teen"
+          "hoofd schouders";
+        gap: 0.5em;
+      }
+      header {
+        grid-area: hoofd;
+      }
+      nav {
+        grid-area: schouders;
+      }
+      main {
+        grid-area: knie;
+      }
+      footer {
+        grid-area: teen;
+      }
     </style>
   </head>
   <body id="basic-layout-3">
